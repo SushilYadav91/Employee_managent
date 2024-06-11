@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>JS Project : </title>
+    <script src="./emp.js"></script>
+    <link href="./style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="container text-center" onload="init()">
+    <h1 style="color:red">Employee Management Project</h1>
+    <hr/>
+    <div>
+        <input type="number" class="fields" placeholder="Emp No" id="eno">
+        <input type="text" class="fields"  placeholder="Emp Name" id="enm">
+        <select id="job"  class="fields" >
+            <option value="0">Select Job Profile</option>
+            <option>Manager</option>
+            <option>Analyst</option>
+            <option>Team-Lead</option>
+            <option>Programmer</option>
+        </select>
+        
+        <input type="number"  class="fields" placeholder="Salary" id="sal">
+        <input type="number"  class="fields" placeholder="Commission" id="comm">
+        <input type="number"  class="fields" placeholder="Bonus" id="bonus">
+    </div>
+    <br/><br/>
+    <div  align="center">
+        <button class="btn-lg btn-warning" onclick="getProcess()">Get Data</button>
+        <button class="btn-lg btn-success" onclick="saveDataInLocalStorage()">Save Data</button>
+    </div>
+    <hr/>
+    <table class=" table table-primary table-stripped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Empno</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <th>Commission</th>
+                <th>Bonus</th>
+                <th>Gross Amount</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+  </body>
+</html>

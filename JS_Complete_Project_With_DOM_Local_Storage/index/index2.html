@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptPratice</title>
+</head>
+<body class="countainer" onload="init()">
+    <h1>project Management</h1>
+    <div  align="center">
+        <input type="number" class="fields" placeholder="Emp no" id="eno">
+        <input type="text" class="fields" placeholder="Emp name" id="ename">
+        <select id="job" class="fields">
+            <option value="0">Select Job Profile</option>
+            <option>Manager</option>
+            <option>Employee</option>
+            <option>coder</option>
+            <option>Programmer</option>
+        </select>
+        <input type="number" class="fields" placeholder="Emp Salary" id="esalary">
+        <input type="number" class="fields" placeholder="Emp bonus" id="ebonus">
+        <input type="number" class="fields" placeholder="Emp Commission" id="eCommission">
+    </div>
+    <br>
+    <br>
+    <div align="center">
+        <button class="btn-btm btn-worning" onclick="getProcess()">GetData</button>
+        <button class="btn-btm btn-success" onclick="saveDataInLocalStorage()">SaveData</button>
+
+    </div>
+    
+</body>
+<script src="./index2.js">
+    
+</script>
+</html>
